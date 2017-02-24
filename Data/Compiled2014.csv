@@ -1,4 +1,4 @@
-Date,Number of outages,Day length hours,Max TemperatureF,Mean TemperatureF,Min TemperatureF,Max Humidity, Mean Humidity, Min Humidity, Max VisibilityMiles, Mean VisibilityMiles, Min VisibilityMiles, Max Wind SpeedMPH, Mean Wind SpeedMPH,
+Date,Number of outages,Day length hours,Max TemperatureF,Mean TemperatureF,Min TemperatureF,Max Humidity, Mean Humidity, Min Humidity, Max VisibilityMiles, Mean VisibilityMiles, Min VisibilityMiles, Max Wind SpeedMPH, Mean Wind SpeedMPH, Max Gust SpeedMPH
 1/1/2014,2,8.528888889,45,42,38,93,88,83,10,2,0,8,3,9
 1/2/2014,2,8.546666667,51,47,43,89,76,63,10,7,0,21,7,26
 1/3/2014,2,8.565833333,48,43,37,85,73,60,10,10,4,14,6,16
