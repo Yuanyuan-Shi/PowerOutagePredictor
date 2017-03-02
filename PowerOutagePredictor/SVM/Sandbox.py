@@ -15,6 +15,7 @@ yTrain = None
 xTest = None
 yTest = None
 df = None
+
 for train, test in splitter.split(data):
     xTrain = scaler.fit_transform(data.iloc[train, 1:])
     yTrain = data.iloc[train, 0]
