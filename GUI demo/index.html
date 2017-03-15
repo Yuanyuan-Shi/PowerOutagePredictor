@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seattle Power Outage</title>
+	<!-- Library -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Grid -->
+	<script src="https://cdn.rawgit.com/jashkenas/underscore/1.5.2/underscore.js"></script>
+	<script src="https://cdn.rawgit.com/jashkenas/backbone/1.1.0/backbone.js"></script>
+	<script src="https://cdn.rawgit.com/wyuenho/backbone-pageable/master/lib/backbone-pageable.js"></script>
+	<script src="https://cdn.rawgit.com/wyuenho/backgrid/master/lib/backgrid.js"></script>
+	<script src="https://cdn.rawgit.com/wyuenho/backgrid-filter/master/backgrid-filter.js"></script>
+	<!-- Your own codes -->
+	<link href="css/gridpicker.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><span>Seattle </span>Power Outage</a>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="col-sm-9 col-sm-offset-1 col-lg-10 col-lg-offset-1 main">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<h2></h2>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-3">
+				<div class="panel panel-success">
+					&nbsp;&nbsp; | Tomorrow's Prediction
+					<div class="panel-heading" id="tmr">
+						<div></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+				<div class="panel panel-success">
+					&nbsp;&nbsp; | Chance
+					<div class="panel-heading" id="chance">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-3">
+				<div class="panel panel-info">
+					&nbsp;&nbsp; | Weather-caused Failure
+					<div class="panel-heading" id="weather">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3">
+					<div class="panel panel-info">
+						&nbsp;&nbsp; | Equiptment Failure
+						<div class="panel-heading" id="equip">
+						</div>
+					</div>
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="panel panel-info">
+					<div class="panel-body">
+						<p>
+							<div id="map_canvas" style="border: 2px solid #3872ac;"></div>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="panel panel-success">
+					<div class="panel-body">
+					  <h3> History </h3>
+						<!-- <p>	Start Date: <input type="text" id="startDate" placeholder="Enter a start date"></input>
+								End Date: <input type="text" id="endDate" placeholder="Enter a end date"></input></p> -->
+						<div class="row">
+								<div class="col-md-6">
+									Start Date <input type="text" id="startDate" placeholder="Enter a start date"></input>
+								</div>
+								<div class="col-md-6">
+									End Date <input type="text" id="endDate" placeholder="Enter a end date"></input>
+								</div>
+						</div>
+						<!-- <div class="row"> -->
+							<p><div id="main"></div></p>
+						<!-- </div> -->
+
+					</div>
+				</div>
+			</div>
+
+		</div><!-- /.row -->
+
+
+
+	</div><!--/.main-->
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDE3lHV_x4Ie-Zolc4W10FlUA4G_za5d-Y&callback=initialize"></script>
+
+</body>
+
+</html>

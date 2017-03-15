@@ -1,0 +1,135 @@
+#datepicker:hover {
+	background-color: #d3d3d3;
+}
+
+
+#map_canvas {
+    height: 500px;
+    width: 100%;;
+    margin: 0px;
+    padding: 0px
+}
+
+
+.backgrid-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 465px;
+  padding: 0;
+  overflow: auto;
+  border: 0;
+}
+
+.backgrid {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.backgrid th,
+.backgrid td {
+  display: none;
+  height: 20px;
+  max-width: 250px;
+  padding: 4px 5px;
+  overflow: hidden;
+  line-height: 20px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-bottom: 1px solid #DDD;
+}
+
+.backgrid th.renderable,
+.backgrid td.renderable {
+  display: table-cell;
+}
+
+.backgrid th {
+  font-weight: bold;
+  text-align: center;
+}
+
+.backgrid th.sortable a {
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.backgrid thead th {
+  vertical-align: bottom;
+  background-color: #f9f9f9;
+}
+
+.backgrid thead th a {
+  display: block;
+}
+
+.backgrid.backgrid-striped tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.backgrid tbody tr.empty {
+  font-style: italic;
+  color: gray;
+}
+
+.backgrid tbody tr.empty td {
+  display: inherit;
+  text-align: center;
+}
+
+.backgrid td.editor {
+  padding: 0;
+}
+
+
+.backgrid .sort-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.3em;
+  border: 0;
+  content: "";
+}
+
+.backgrid .ascending .sort-caret {
+  vertical-align: baseline;
+  border-top: none;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #000000;
+  border-left: 4px solid transparent;
+}
+
+.backgrid .descending .sort-caret {
+  vertical-align: super;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-bottom: none;
+  border-left: 4px solid transparent;
+}
+
+.backgrid .string-cell
+ {
+  text-align: center;
+}
+
+.backgrid .date-cell,
+.backgrid .time-cell,
+.backgrid .datetime-cell,
+.backgrid .number-cell,
+.backgrid .integer-cell,
+.backgrid .percent-cell{
+  text-align: right;
+}
+
+/* Or maybe you enjoy zebra stripes */
+.backgrid tbody tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
