@@ -1,8 +1,3 @@
-Make another document that describes the data sets, their size, dimensionality, data model 
-(what specific columns, etc. are available). Verify that the data are available. Is it possible to create 
-a subset of the data for unit tests? Address this in your document. (1 pt)
-
-
 ## Data set: 
 
 * Seattle power outage data during the past 16 years (2000–2016). There are 12,583 records included. 
