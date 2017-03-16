@@ -20,7 +20,10 @@ Here is the design for the final GUI: ![Alt](https://github.com/rkastilani/Power
 	
 	* probabilities of each class for a given day
 
-* Machine Learning methods: Tree-based, SVM, and NN.
+* Machine Learning methods: 
+        * Tree-based: desicion tree, emsemble methods 
+	* SVM
+	* Neural Netowrk
 
 * Chanlenge: imbalabce between classes
 * Solution: balance the samples from differenet classes
