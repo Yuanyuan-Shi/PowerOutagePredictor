@@ -11,3 +11,20 @@ Since we do not plan to commercialize this, this project is under the permissive
 * scikit-learn
 * numpy
 * pandas
+
+## Repository Structure
+
+### Data
+Contains the data used in this project. It also contains a directory "backup" that contains pre-processed data; this directory should be ignored except by contributors to this project.
+
+### Docs
+Presentations and posters related to this project.
+
+### GUI demo
+GUI implementation of this project. Note that this is still not fully functional.
+
+### Graphs
+Workflow and images pertaining to design considerations.
+
+### PowerOutagePredictor
+The meat (or tofu if you are vegetarian) of this project. Contains all the python packages and modules of machine learning methods to predict power outages.
