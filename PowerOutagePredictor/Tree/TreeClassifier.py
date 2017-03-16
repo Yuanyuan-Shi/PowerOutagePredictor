@@ -4,7 +4,7 @@ categories: 0-2, 3-7, 8+ outages.
 
 Params:
 
-weatherData - A numpy 2d array or like with shape (# of samples, 7),
+weatherData - A pandas DataFrame with shape (# of samples, 7),
 where 7 represents the required features to make predictions. The
 required features in order are: day length (hrs), average temperature
 (F), average humidity (%), max windspeed (mph), average windspeed (mph),
@@ -30,7 +30,7 @@ maintained.
 
 Raises:
 ValueError - if shape of weatherData is not (:, 7)
-ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb' or 'bg'.
+ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg' or None.
 """
 
 import pandas as pd
@@ -58,7 +58,8 @@ categories: 0-2, 3-7, 8+ outages.
     else:
         raise ValueError("method has to be 'dt', 'rf', 'et','ab','gb' or 'bg'")
     scaler = joblib.load("scaler.pkl")
-    weather = weatherData[['Day_length_hr','Avg_Temp_F','Avg_humidity_percent','Max_windspeed_mph','Precipitation_in']]
+    weather = weatherData[['Day_length_hr','Avg_Temp_F','Avg_humidity_percent',
+                           'Max_windspeed_mph','Precipitation_in']]
     scaledData = scaler.transform(weather)
     return model.predict_proba(scaledData)
 
@@ -115,6 +116,7 @@ categories: 0 (0-2), 1 (3-7), 2 (8+) outages."""
     else:
         raise ValueError("method has to be 'dt', 'rf', 'et','ab','gb' or 'bg'")
     scaler = joblib.load("scaler.pkl")
-    weather = weatherData[['Day_length_hr','Avg_Temp_F','Avg_humidity_percent','Max_windspeed_mph','Precipitation_in']]
+    weather = weatherData[['Day_length_hr','Avg_Temp_F','Avg_humidity_percent',
+                           'Max_windspeed_mph','Precipitation_in']]
     scaledData = scaler.transform(weather)
     return model.predict(scaledData)
