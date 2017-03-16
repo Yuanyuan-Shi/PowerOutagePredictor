@@ -10,8 +10,17 @@ Input Data:
 	wind speed: max, mean
 	max gust speed
 	precipitation
+	weather events: snow, thunderstorm etc
 
 Output (prediction):
-	# of outage(equioment failure and others)
+	class of outage status
+	% normal: 0 - 2 outages
+	% bad:    3 - 7 outages
+	% extreme:   8+ outages
 	
-Machine Learning methods: LASSO, Tree-based, SVM, and NN.s
+	probabilities of each class for a given day
+
+Machine Learning methods: Tree-based, SVM, and NN.
+
+Chanlenge: imbalabce between classes
+Solution: balance the samples from differenet classes
