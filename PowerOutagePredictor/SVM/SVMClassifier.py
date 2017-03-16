@@ -29,7 +29,7 @@ def predictOutageProba(weatherData):
     model = joblib.load("SVCmodel.pkl")
     scaler = joblib.load("scaler.pkl")
     scaledData = scaler.transform(weatherData)
-    return model.predict_proba(weatherData)
+    return model.predict_proba(scaledData)
 
 """
 Predict the number outages falling into one of the three
@@ -56,4 +56,4 @@ def predictOutage(weatherData):
     model = joblib.load("SVCmodel.pkl")
     scaler = joblib.load("scaler.pkl")
     scaledData = scaler.transform(weatherData)
-    return model.predict(weatherData)
+    return model.predict(scaledData)
