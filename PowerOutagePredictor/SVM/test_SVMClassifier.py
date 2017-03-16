@@ -11,11 +11,8 @@ one = np.array([[9,50,70,20,15,30,0.5]])
 two = np.array([[8,30,60,50,30,50,0.5]])
 
 zero = zero.reshape(1, -1)
-zero = scaler.transform(zero)
 one = one.reshape(1, -1)
-one = scaler.transform(one)
 two = two.reshape(1, -1)
-two = scaler.transform(two)
 
 """
 Test probability outputs of model.
