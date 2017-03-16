@@ -21,7 +21,7 @@ Contains the data used in this project. It also contains a directory "backup" th
 Presentations and posters related to this project.
 
 ### GUI demo
-GUI implementation of this project. Note that this is still not fully functional.
+GUI implementation of this project. Note that this is still not fully functional. Currently the GUI can display the history of outages, but the prediction algorithm has yet to be implemented into the GUI.
 
 ### Graphs
 Workflow and images pertaining to design considerations.
