@@ -18,7 +18,7 @@ Since we do not plan to commercialize this, this project is under the permissive
 Contains the data used in this project. It also contains a directory "backup" that contains pre-processed data; this directory should be ignored except by contributors to this project.
 
 ### Docs
-Presentations and posters related to this project.
+Documentation regarding this project. To view the API documentation, go to the \_build folder and open index.html. There are also presentations and poster for more information regarding this project.
 
 ### GUI demo
 GUI implementation of this project. Note that this is still not fully functional. Currently the GUI can display the history of outages, but the prediction algorithm has yet to be implemented into the GUI.
