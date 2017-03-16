@@ -6,4 +6,6 @@
 
 * The data in use for this project is de-identified, removing all customer sensitive information. For debugging and unit tests, we only use the part of the data (1 year). Then we run the developed algorithm on the whole dataset.
 
-* The distribution of our data in use ![Alt](https://github.com/rkastilani/PowerOutagePredictor/blob/master/Graphs/classDistribution.png)
+* The distribution of our data in use 
+
+![Alt](https://github.com/rkastilani/PowerOutagePredictor/blob/master/Graphs/classDistribution.png)
