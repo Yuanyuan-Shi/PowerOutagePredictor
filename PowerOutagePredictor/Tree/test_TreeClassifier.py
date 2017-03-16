@@ -32,7 +32,9 @@ weather2 = weather2.append({"Day_length_hr": 8,
                 "Max_windgust_mph": 50,
                 "Precipitation_in": 0.5},
                 ignore_index=True)
-def test_predictOutageProba():
+
+
+def test_predictOutageProba_dt():
     """Test probability outputs of the model"""
     # decision tree
     zeroPredict = predictOutageProba(weather0,'dt')
@@ -50,6 +52,10 @@ def test_predictOutageProba():
     assert math.isclose(0.15051901, twoPredict[0,1], rel_tol=1e-05)
     assert math.isclose(0.81621062, twoPredict[0,2], rel_tol=1e-05)
     
+    return
+
+
+def test_predictOutageProba_rf():
     # random forest
     zeroPredict = predictOutageProba(weather0,'rf')
     assert math.isclose(0.6080934, zeroPredict[0,0], rel_tol=1e-05)
@@ -66,6 +72,10 @@ def test_predictOutageProba():
     assert math.isclose(0.29712351, twoPredict[0,1], rel_tol=1e-05)
     assert math.isclose(0.65595431, twoPredict[0,2], rel_tol=1e-05)
     
+    return
+
+def test_predictOutageProba_et():
+    """Test probability outputs of the model"""
     # extra trees
     zeroPredict = predictOutageProba(weather0,'et')
     assert math.isclose(0.57055553, zeroPredict[0,0], rel_tol=1e-05)
@@ -82,6 +92,10 @@ def test_predictOutageProba():
     assert math.isclose(0.22724488, twoPredict[0,1], rel_tol=1e-05)
     assert math.isclose(0.61811041, twoPredict[0,2], rel_tol=1e-05)
     
+    return
+
+def test_predictOutageProba_ab():
+    """Test probability outputs of the model"""
     # AdaBoost
     zeroPredict = predictOutageProba(weather0,'ab')
     assert math.isclose(0.57178065, zeroPredict[0,0], rel_tol=1e-05)
@@ -98,6 +112,10 @@ def test_predictOutageProba():
     assert math.isclose(0.94353618, twoPredict[0,1], rel_tol=1e-05)
     assert math.isclose(0.01338219, twoPredict[0,2], rel_tol=1e-05)
     
+    return
+
+def test_predictOutageProba_gb():
+    """Test probability outputs of the model"""  
     # Gradient Boost
     zeroPredict = predictOutageProba(weather0,'gb')
     assert math.isclose(0.71547103, zeroPredict[0,0], rel_tol=1e-05)
@@ -114,6 +132,10 @@ def test_predictOutageProba():
     assert math.isclose(0.12376263, twoPredict[0,1], rel_tol=1e-05)
     assert math.isclose(0.87443314, twoPredict[0,2], rel_tol=1e-05)
     
+    return
+
+def test_predictOutageProba_bg():
+    """Test probability outputs of the model"""    
     # Bagging
     zeroPredict = predictOutageProba(weather0,'bg')
     assert math.isclose(0.9, zeroPredict[0,0], rel_tol=1e-05)
@@ -129,6 +151,8 @@ def test_predictOutageProba():
     assert math.isclose(0.9, twoPredict[0,0], rel_tol=1e-05)
     assert math.isclose(0.1, twoPredict[0,1], rel_tol=1e-05)
     assert math.isclose(0., twoPredict[0,2], rel_tol=1e-05)
+    
+    return
 
 
 def test_predictOutage():
