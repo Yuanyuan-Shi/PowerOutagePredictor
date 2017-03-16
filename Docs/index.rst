@@ -13,6 +13,15 @@ Welcome to PowerOutagePredictor's documentation!
 .. automodule:: SVM
     :members:
 
+.. automodule:: Tree
+    :members:
+
+.. automodule:: Linear
+    :members:
+
+.. automodule:: NeuralNetwork
+    :members::
+
 Indices and tables
 ==================
 
