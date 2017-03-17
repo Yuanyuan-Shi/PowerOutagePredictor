@@ -84,7 +84,8 @@ Predict the number outages falling into one of the three
 categories: 0 (0-2), 1 (3-7), 2 (8+ outages).
 
 Params:
-* weatherData - A pandas DataFrame with shape 1 by 7,
+* weatherData - A pandas DataFrame with shape 1 by 7
+
 where 7 represents the required features to make predictions. The
 required features in order are: day length (hrs), average temperature
 (F), average humidity (%), average windspeed (mph), max windspeed (mph), 
@@ -94,6 +95,7 @@ please name them as 'Day_length_hr','Avg_Temp_F','Avg_humidity_percent','Avg_win
 
 Methods:
 * neural_network_clf(x_train, y_train, x_test, y_test)
+
 It takes the train and test data as input, and returns the values 0, 1, and 2
 correspond to the 3 classes of outages 0-2, 3-7, and 8+, respectively.
 Also, it returns the training and testing error.
