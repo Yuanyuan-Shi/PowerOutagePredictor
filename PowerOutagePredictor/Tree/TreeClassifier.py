@@ -69,7 +69,7 @@ categories: 0-2, 3-7, 8+ outages.
 
 Params:
 
-weatherData - A numpy 2d array or like with shape (# of samples, 7),
+weatherData - A pandas DataFrame with shape (# of samples, 7),
 where 7 represents the required features to make predictions. The
 required features in order are: day length (hrs), average temperature
 (F), average humidity (%), max windspeed (mph), average windspeed (mph),
@@ -94,7 +94,7 @@ The order of the samples are maintained.
 
 Raises:
 ValueError - if shape of weatherData is not (:, 7)
-ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb' or 'bg'.
+ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg'or none.
 """
 def predictOutage(weatherData,method=None):
     """Predict the number outages falling into one of the three
