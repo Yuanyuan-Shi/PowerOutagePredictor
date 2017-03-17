@@ -1,6 +1,6 @@
 ## Data set: 
 
-* Seattle power outage data during the past 16 years (2000–2016). There are 12,583 records included. 
+* Seattle power outage data during the past 16 years (2000–2016). There are 5,664 records included. 
 
 * For each record, It contains 10 fields: outage start time, end time, event number, feeder number, outage location, cause of the outage, category, affected customer number, outage duration, total affected customer hour
 
