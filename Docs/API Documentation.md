@@ -74,8 +74,8 @@ where the values are the probabilities. The order of the samples are
 maintained.
 
 Raises:
-ValueError - if shape of weatherData is not (:, 7)
-ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg' or None.
+* ValueError - if shape of weatherData is not (:, 7)
+* ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg' or None.
 
 
 ### PredictOutage(weatherData, method)
@@ -106,5 +106,5 @@ correspond to the 3 classes of outages 0-2, 3-7, and 8+, respectively.
 The order of the samples are maintained.
 
 Raises:
-ValueError - if shape of weatherData is not (:, 7)
-ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg' or none. 
+* ValueError - if shape of weatherData is not (:, 7)
+* ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg' or none. 
