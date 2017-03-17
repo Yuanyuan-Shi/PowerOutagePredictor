@@ -111,7 +111,7 @@ Raises:
 
 ## Linear module
 We tried Multiple Linear Regression, Lasso, Ridge but none of them could get a satisfactory result.
-We didn't write them into .py packages but just briefly test in ipython notebook.
+We didn't write them into .py packages but just briefly tested them in ipython notebook.
 The result is [here](https://github.com/rkastilani/PowerOutagePredictor/tree/master/PowerOutagePredictor/Linear).
 
 
