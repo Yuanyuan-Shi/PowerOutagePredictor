@@ -30,17 +30,16 @@ The GUI can display the history of outages and the prediction data generated fro
 ### data folder
 `prediction.txt` stores the results that generated from any machine learning method.
 
-I must follow a format (.txt file) like this
+It must follow a format (.txt file) like this
+
 [1st line] Number of Tomorrow's Outages Prediction
+
 [2nd line] Chance of Tomorrow's Outages Prediction
+
 [3rd line] Number of Weather-caused Failure
+
 [4th line] Number of Equiptment Failure
 
-For example,
-0 - 2 outages
-83%
-0 - 2 outages
-0 - 2 outages
-
+For example, [see here](https://github.com/rkastilani/PowerOutagePredictor/blob/master/GUI%20demo/data/prediction.txt)
 
 
