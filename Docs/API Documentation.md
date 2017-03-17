@@ -65,8 +65,8 @@ two unused parameters.
          * 'rf' for RandomForest, 
          * 'et' for ExtraTrees,
          * 'ab' for AdaBoost,
-         * 'gb' for GradientBoost
-         * 'bg' for Bagging
+         * 'gb' for GradientBoost,
+         * 'bg' for Bagging.
 
 Returns:
 Numpy array with shape (# of samples, 3). Columns 0, 1, and 2
