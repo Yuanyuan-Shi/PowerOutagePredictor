@@ -28,3 +28,6 @@ Workflow and images pertaining to design considerations.
 
 ### PowerOutagePredictor
 The meat (or tofu if you are vegetarian) of this project. Contains all the python packages and modules of machine learning methods to predict power outages. It contains examples of usage too.
+
+### Group
+![Alt](PowerOutagePredictor/Graphs/GroupPhoto.jpg)
