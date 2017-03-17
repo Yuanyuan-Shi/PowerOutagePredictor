@@ -91,15 +91,16 @@ required features in order are: day length (hrs), average temperature
 precipitation (in) and event thunderstorm. For the neural network method module,
 please name them as 'Day_length_hr','Avg_Temp_F','Avg_humidity_percent','Avg_windspeed_mph','Max_windspeed_mph',
 'Precipitation_in','Event_thunderstorm'
-* method
-neural_network_clf(x_train, y_train, x_test, y_test)
+
+Methods:
+* neural_network_clf(x_train, y_train, x_test, y_test)
 It takes the train and test data as input, and returns the values 0, 1, and 2
 correspond to the 3 classes of outages 0-2, 3-7, and 8+, respectively.
 Also, it returns the training and testing error.
 
 Raises:
-* ValueError - if shape of weatherData is not (:, 7)
-* ValueError - if method is not one of 'dt', 'rf', 'et','ab','gb','bg' or none. 
+* ValueError - if load data not successfully
+* ValueError - if between-class imbalance beyond certain threshold. 
 
 
 ## Linear module
