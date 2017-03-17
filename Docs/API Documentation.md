@@ -83,7 +83,6 @@ Predict the number outages falling into one of the three
 categories: 0 (0-2), 1 (3-7), 2 (8+ outages).
 
 Params:
-Params:
 * weatherData - A pandas DataFrame with shape 1 by 7,
 where 7 represents the required features to make predictions. The
 required features in order are: day length (hrs), average temperature
