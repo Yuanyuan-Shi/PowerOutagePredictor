@@ -1,8 +1,8 @@
 ## Data set:
 
-* Seattle power outage data during the past 16 years (2000–2016). There are 5,664 records included. 
+* Seattle power outage data during the past 16 years (2000–2016).  
 * For each record, It contains 10 fields: outage start time, end time, event number, feeder number, outage location, cause of the outage, category, affected customer number, outage duration, total affected customer hour
-* The data in use for this project is de-identified, removing all customer sensitive information. For debugging and unit tests, we only use the part of the data (1 year). Then we run the developed algorithm on the whole dataset.
+* The data in use for this project is de-identified, removing all customer sensitive information. There are 5,664 records included. For debugging and unit tests, we only use the part of the data (1 year). Then we run the developed algorithm on the whole dataset.
 * The distribution of our data in use 
 
 ![Alt](https://github.com/rkastilani/PowerOutagePredictor/blob/master/Graphs/classDistribution.png)
@@ -26,14 +26,14 @@ We collected 16 years weather data from https://www.wunderground.com/history/air
 
 ## Lessons leaned from the extreme cases
 
-1. Tons of failures were reported because
+1. Tons of failures were reported on one day because
 
     a. trees in wire, mainly accociated with high wind speed (average highest wind speed 35.3 mph, and average maximum wind gust 49.0 mph).
 
-    b. lighitning, mostly accoviated with "thunderstorm" in the "Event" catagory. Need to exam more weather data to see whether it is a sufficient condition.
+    b. lighitning, mostly accociated with "thunderstorm" in the "Event" catagory. Need to exam more weather data to see whether it is a sufficient condition.
 
 2. On most of the extreme days, though the majority of the records are catogried as OH, there are on average 2 records of equipment failure (trans + gen) and 1 UG. 
 
 3. One of the days was mostly because of the snow. 
 
-4. May need to separate the days with extreme weather conditions.
+4. May need to add weigth to the days with extreme weather conditions.
