@@ -60,13 +60,13 @@ as 'Day_length_hr','Avg_Temp_F','Avg_humidity_percent','Max_windspeed_mph',
 and 'Precipitation_in' respectively. You can give any number for the other 
 two unused parameters.
 * method - a string representing a method supported
-         default method is ExtraTrees if no method specified
-         * 'dt' for DecisionTree,
-         * 'rf' for RandomForest, 
-         * 'et' for ExtraTrees,
-         * 'ab' for AdaBoost,
-         * 'gb' for GradientBoost,
-         * 'bg' for Bagging.
+default method is ExtraTrees if no method specified
+ * 'dt' for DecisionTree,
+ * 'rf' for RandomForest, 
+ * 'et' for ExtraTrees,
+ * 'ab' for AdaBoost,
+ * 'gb' for GradientBoost,
+ * 'bg' for Bagging.
 
 Returns:
 Numpy array with shape (# of samples, 3). Columns 0, 1, and 2
@@ -94,13 +94,13 @@ as 'Day_length_hr','Avg_Temp_F','Avg_humidity_percent','Max_windspeed_mph',
 and 'Precipitation_in' respectively. You can give any number for the other 
 two unused parameters.
 * method - a string representing a method supported
-         default method is ExtraTrees if no method specified
-        * 'dt' for DecisionTree,
-        * 'rf' for RandomForest, 
-        * 'et' for ExtraTrees,                               
-        * 'ab' for AdaBoost
-        * 'gb' for GradientBoost
-        * 'bg' for Bagging
+default method is ExtraTrees if no method specified
+ * 'dt' for DecisionTree,
+ * 'rf' for RandomForest, 
+ * 'et' for ExtraTrees,
+ * 'ab' for AdaBoost,
+ * 'gb' for GradientBoost,
+ * 'bg' for Bagging.
 
 Returns:
 Numpy array with shape (# of samples, 1). The values 0, 1, and 2
