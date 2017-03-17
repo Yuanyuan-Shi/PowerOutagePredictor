@@ -23,7 +23,7 @@ The GUI can display the history of outages and the prediction data generated fro
 ### css folder
 `bootstrap.min.css` sotres Responsive web design (RWD) css styles which is an approach to web design aimed at allowing desktop webpages to be viewed in response to the size of the screen or web browser one is viewing with.
 
-`gridpicker.css` stores the backgrid (talbe) and daypicker css styles.
+`gridpicker.css` stores the backgrid (table) and day picker css styles.
 
 `styles.css` stores the general HTML body, navigation bar etc. css styles.
 
