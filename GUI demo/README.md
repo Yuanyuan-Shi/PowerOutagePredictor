@@ -11,3 +11,5 @@ Features:
 6. Users could easily read the distribution of the outages
 7. Users could study any date range they want.
 8. It is mobile device friendly. The layout will automatically change based on the device.
+
+![Alt](https://github.com/rkastilani/PowerOutagePredictor/blob/master/GUI%20demo/GUI.png)
