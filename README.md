@@ -1,6 +1,6 @@
 # Power Outage Predictor
 
-As the name suggests, Power Outage Predictor is a python package dedicated to predict power outages given certain weather conditions. Although the package can be implemented in any, the package was developed using utilities and weather data in Seattle, WA; hence caution should be made on prediction power outage elsewhere. A GUI implementation of the package is also available, though it is not complete.
+As the name suggests, Power Outage Predictor is a python package dedicated to predict power outages given certain weather conditions. Although the package can be implemented in any, the package was developed using utilities and weather data in Seattle, WA; hence caution should be made on prediction power outage elsewhere. A GUI implementation of the package is also available.
 
 ## License
 Since we do not plan to commercialize this, this project is under the permissive MIT license. If anything changes, we will be sure to update accordingly. If you do happen to want to use any parts of this project, please do give reference. For more details, please read LICENSE.md
@@ -21,7 +21,7 @@ Contains the data used in this project. It also contains a directory "backup" th
 Documentation regarding this project. To view the API documentation, open the API Documentation.md file. The Presentations and poster directory contains more information about this project. The build\_ directory and the rest of the files are related to Sphinx autodocumentation tool that we are planning to implement. For now, simply open the API documentation.md file.
 
 ### GUI demo
-GUI implementation of this project. Note that this is still not fully functional. Currently the GUI can display the history of outages, but the prediction algorithm has yet to be implemented into the GUI.
+The GUI can display the history of outages and the prediction generated from any machine learning algorithm that the user preferred in the project. A web-based user interactive interface is built using Javascript. Users could read the prediction and history outages from the dashboard on any mobile device. Since the data is confidential, the outage data demonstration is only available from 2014/03/01 to 2014/03/30, and the information is hashed.
 
 ### Graphs
 Workflow and images pertaining to design considerations.
