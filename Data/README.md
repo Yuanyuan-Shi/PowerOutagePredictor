@@ -27,8 +27,10 @@ We collected 16 years weather data from https://www.wunderground.com/history/air
 ## Lessons leaned from the extreme cases
 
 1. Tons of failures were reported because
-	a. trees in wire, mainly accociated with high wind speed (average highest wind speed 35.3 mph, and average maximum wind gust 49.0 mph).
-	b. lighitning, mostly accoviated with "thunderstorm" in the "Event" catagory. Need to exam more weather data to see whether it is a sufficient condition.
+
+a. trees in wire, mainly accociated with high wind speed (average highest wind speed 35.3 mph, and average maximum wind gust 49.0 mph).
+
+b. lighitning, mostly accoviated with "thunderstorm" in the "Event" catagory. Need to exam more weather data to see whether it is a sufficient condition.
 
 2. On most of the extreme days, though the majority of the records are catogried as OH, there are on average 2 records of equipment failure (trans + gen) and 1 UG. 
 
